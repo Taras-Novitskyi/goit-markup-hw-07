@@ -1,0 +1,87 @@
+// ----------- section header -----------
+.header {
+	background-color: $color-main-light;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	font-weight: 500;
+	border: 1px solid #ECECEC;	
+
+		&__container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 80px;
+		}
+		&__logo {
+			display: flex;
+			align-items: center;
+			margin-right: 50px;
+			span{
+				color: $color-main-dark;
+			}
+		}
+		&__menu {
+			flex: 1 1 auto;
+			display: flex;
+			align-items: center;
+
+			a {
+				padding: 33px 0;
+			}
+		}
+		&__list {
+			display: flex;
+		}
+		&__link {
+			padding: 0 20px;
+			a{
+				color: $color-main-dark;
+				transition: color 250ms $timing-function;	
+			}
+			a:hover, a:focus {
+				color: $main-color;	
+			}
+		}
+
+		
+		&__right {}
+		&__contacts{
+			height: 100%;
+			display: flex;
+			align-items: center;
+		}
+		&__element{
+
+			&:not(:last-child){
+			margin-right: 30px;
+			}
+		}
+
+	.element-contact {
+
+		a {
+			padding: 33px 0;
+		}
+		
+			&__link {
+				display: flex;
+				align-items: center;
+				color: $color-second-dark;
+				transition: color 250ms $timing-function;
+
+				&:hover, &:focus{
+					color: $main-color;
+				}
+			}
+			&__icon-block {
+				margin-right: 10px;
+			}
+			&__icon {
+				display: block;
+				fill: currentColor;
+			}
+			&__text {}
+	}
+}
