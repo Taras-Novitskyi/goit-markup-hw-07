@@ -1,0 +1,34 @@
+// ----------- section clients ---------
+.clients {
+
+	&__title {
+	}
+	&__list {
+		display: flex;
+	}
+	&__logo {
+		width: calc((100% - 150px) / 6);
+		&:not(:last-child){
+			margin-right: 30px;
+		}
+	}
+	&__icon-link {
+		// width: 170px;
+		// height: 92px;
+		display: inline-block;
+		padding: 16px 32px;
+		border: 1px solid $color-svg-icon;
+		border-radius: 4px;
+		color: $color-svg-icon;
+
+		transition: color 250ms $timing-function, border 250ms $timing-function;
+
+		&:hover, &:focus{
+			color: $main-color;
+			border: 1px solid $main-color;
+		}
+	}
+	&__icon {
+		fill: currentColor;
+	}
+}

@@ -1,0 +1,36 @@
+// -----------  section portfolio  -----------
+.portfolio {
+
+	&__title{
+		color: $color-main-dark;
+		margin-bottom: 50px;
+	}
+	&__menu {
+		margin-bottom: 50px;
+	}
+	&__list {
+			display: flex;
+			justify-content: center;
+	}
+	&__item {
+		margin-right: 8px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+	&__body {}
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__element {
+		width: calc((100% - 60px) / 3);
+		background-color: $color-main-light;
+	}
+	&__element:not(:nth-child(3n)) {
+		margin-right: 30px;
+	}
+	&__element:not(:nth-last-child(-n + 3)) {
+		margin-bottom: 30px;
+	}
+}
