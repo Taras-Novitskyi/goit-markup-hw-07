@@ -1,10 +1,24 @@
 // ----------- logo -----------
 
-.logo {
+%logo {
 	display: block;
-	font-family: 'Raleway', sans-serif;
+	font-family: $font-logo;
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.19;
 	color: $main-color;
+	span{
+		color: $color-main-dark;
+	}
+}
+
+.logo-black {
+	@extend %logo;
+}
+
+.logo-wht {
+	@extend %logo;
+	span {
+		color: $color-main-light;	
+	}
 }

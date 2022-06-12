@@ -2,6 +2,7 @@
 .footer{
 	background-color: $color-bg-dark;
 	padding: 60px 0;
+	
 		&__container{
 			display: flex;
 		}
@@ -10,10 +11,6 @@
 		}
 		&__logo {
 			margin-bottom: 20px;
-
-			span{
-				color: $color-main-light;
-			}
 		}
 		&__address{}
 		&__list{}
@@ -48,47 +45,24 @@
 			text-align: left;
 			color: $color-main-light;
 		}
-		&__social-list {}
+		&__social-list {
+			display: flex;
+		}
+		&__social-iteam {
+
+			&:not(:last-child){
+			margin-right: 10px;
+		}
+		}
+		&__social-link {}		
 		&__form {
 			margin-top: 12px;
 		}
-	
-	.form-footer {
-	
-			&__title {
-				margin-bottom: 20px;
-				text-align: left;
-				color: $color-main-light;
-			}
-			&__field {
-				&:focus-within > .form-footer__input{
-					border: 1px solid $main-color;
-				}
-			}
-			&__input {
-				margin-right: 12px;
-				padding: 16px;
-				width: 358px;
-				height: 50px;
-				background-color: inherit;
-				color: $color-main-light;
-				border: 1px solid rgba(255, 255, 255, 0.3);
-				outline: none;
-
-				filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-				border-radius: 4px;
-
-				transition: border 250ms $timing-function;
-			}
-			&__buttom {}
-			&__icon {
-				margin-left: 10px;
-			}
-	}
 }
+// ------------- social-footer icon ----------------
 
 .social-footer {
-	display: flex;
+	
 
 	&__social-iteam {
 
@@ -100,7 +74,7 @@
 		color: $color-main-light;
 		background-color: rgba(255, 255, 255, 0.1);
 	}
-	&__icon {
-		fill: currentColor;
-	}
+	// &__icon {
+	// 	fill: currentColor;
+	// }
 }

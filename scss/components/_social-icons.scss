@@ -1,20 +1,32 @@
 // ------------- social-icon ----------------
+
 .social-icon{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 44px;
-	height: 44px;
-	border-radius: 50%;
-	color: $color-svg-icon;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 44px;
+		height: 44px;
+		border-radius: 50%;
+		color: $color-svg-icon;
 
-	transition: color 250ms $timing-function, background-color 250ms $timing-function;
+		transition: color 250ms $timing-function, background-color 250ms $timing-function;
 
-	&:hover, &:focus{
-		background-color: $main-color;
-		color: $color-main-light;
-	}
+		&:hover, &:focus{
+			background-color: $main-color;
+			color: $color-main-light;
+		}
+		
 	&__icon {
 		fill: currentColor;
 	}
+	
 }
+
+.social-icon--dark {
+		color: $color-main-light;
+		background-color: rgba(255, 255, 255, 0.1);
+}
+
+	
+
+
