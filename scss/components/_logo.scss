@@ -1,6 +1,6 @@
 // ----------- logo -----------
 
-%logo {
+.logo {
 	display: block;
 	font-family: $font-logo;
 	font-weight: 700;
@@ -12,12 +12,7 @@
 	}
 }
 
-.logo-black {
-	@extend %logo;
-}
-
-.logo-wht {
-	@extend %logo;
+.logo--wht {
 	span {
 		color: $color-main-light;	
 	}

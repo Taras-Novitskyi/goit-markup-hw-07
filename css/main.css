@@ -416,7 +416,7 @@ body {
   border-radius: 2px;
 }
 
-.logo-black, .logo-wht {
+.logo {
   display: block;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -425,11 +425,11 @@ body {
   color: #2196F3;
 }
 
-.logo-black span, .logo-wht span {
+.logo span {
   color: #212121;
 }
 
-.logo-wht span {
+.logo--wht span {
   color: #FFFFFF;
 }
 
@@ -1175,15 +1175,6 @@ body {
 
 .footer__form {
   margin-top: 12px;
-}
-
-.social-footer__social-iteam:not(:last-child) {
-  margin-right: 10px;
-}
-
-.social-footer__icon-link {
-  color: #FFFFFF;
-  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .portfolio__title {

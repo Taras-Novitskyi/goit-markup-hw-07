@@ -52,29 +52,10 @@
 
 			&:not(:last-child){
 			margin-right: 10px;
-		}
-		}
-		&__social-link {}		
+			}
+		}		
 		&__form {
 			margin-top: 12px;
 		}
 }
-// ------------- social-footer icon ----------------
 
-.social-footer {
-	
-
-	&__social-iteam {
-
-		&:not(:last-child){
-			margin-right: 10px;
-		}
-	}
-	&__icon-link {
-		color: $color-main-light;
-		background-color: rgba(255, 255, 255, 0.1);
-	}
-	// &__icon {
-	// 	fill: currentColor;
-	// }
-}
