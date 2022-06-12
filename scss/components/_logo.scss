@@ -10,10 +10,10 @@
 	span{
 		color: $color-main-dark;
 	}
-}
-
-.logo--wht {
-	span {
-		color: $color-main-light;	
+	&--wht {
+		
+		span {
+			color: $color-main-light;	
+		}
 	}
 }

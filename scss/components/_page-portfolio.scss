@@ -26,11 +26,88 @@
 	&__element {
 		width: calc((100% - 60px) / 3);
 		background-color: $color-main-light;
+	
+		&:not(:nth-child(3n)) {
+			margin-right: 30px;
+		}
+		&:not(:nth-last-child(-n + 3)) {
+			margin-bottom: 30px;
+		}
 	}
-	&__element:not(:nth-child(3n)) {
-		margin-right: 30px;
+	&__card{
+		display: block;
+
+		transition: box-shadow 250ms $timing-function; 
+
+		&:hover, &:focus{
+			box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+		}
+		&:hover ::before, &:focus ::before{
+			transform: translate(0);
+		}
 	}
-	&__element:not(:nth-last-child(-n + 3)) {
-		margin-bottom: 30px;
+	&__img {
+		position: relative;
+		overflow: hidden;
+
+		& img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+		&::before{
+			content: "";
+			display: inline-block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: $main-color;
+			opacity: 0.9;
+			transform: translateY(100%);
+
+			transition: transform 250ms $timing-function;
+		}
+	}
+	&__info{
+		display: flex;
+		align-items: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 24px;
+
+		font-size: 18px;
+		line-height: 1.56;
+		color: $color-main-light;
+		overflow: hidden;
+		transform: translateY(100%);
+
+		transition: transform 250ms $timing-function;
+
+		.portfolio__card:hover &, .portfolio__card:focus &{
+			transform: translate(0);
+		}
+	}
+	&__text {
+		border: 1px solid #EEEEEE;
+		border-top: none;
+		padding: 20px 24px;
+	}
+	&__card-title {
+		margin-bottom: 4px;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 2;
+		letter-spacing: 0.06em;
+		color: $color-main-dark;
+	}
+	&__card-subtitle {
+		line-height: 1.87;
+		color: $color-second-dark;
 	}
 }

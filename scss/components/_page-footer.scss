@@ -3,7 +3,7 @@
 	background-color: $color-bg-dark;
 	padding: 60px 0;
 	
-		&__container{
+		.container{
 			display: flex;
 		}
 		&__contacts{
@@ -45,15 +45,7 @@
 			text-align: left;
 			color: $color-main-light;
 		}
-		&__social-list {
-			display: flex;
-		}
-		&__social-iteam {
-
-			&:not(:last-child){
-			margin-right: 10px;
-			}
-		}		
+		&__social-list {}		
 		&__form {
 			margin-top: 12px;
 		}

@@ -1,22 +1,22 @@
 // ----------- section clients ---------
 .clients {
 
-	&__title {
-	}
+	&__title {}
 	&__list {
 		display: flex;
 	}
-	&__logo {
+	&__item {
 		width: calc((100% - 150px) / 6);
+		
 		&:not(:last-child){
 			margin-right: 30px;
 		}
 	}
-	&__icon-link {
-		// width: 170px;
-		// height: 92px;
-		display: inline-block;
-		padding: 16px 32px;
+	&__link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 16px;
 		border: 1px solid $color-svg-icon;
 		border-radius: 4px;
 		color: $color-svg-icon;

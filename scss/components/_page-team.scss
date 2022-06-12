@@ -38,15 +38,5 @@
 			margin-bottom: 16px;
 			color: $color-second-dark;
 		}
-
-		&__social-list {
-			display: flex;
-		}
-		&__social-iteam {
-
-			&:not(:last-child){
-				margin-right: 10px;
-			}
-		}
 	}
 }
