@@ -155,9 +155,11 @@
 
 	&__label::after{
 		content: '';
+		top: 0;
+		left: 0;
 		width: 24px;
 		height: 24px;
-		background-image: url('../../img/webstudio/hero/modal/send.svg');
+		background-image: url('../img/webstudio/hero/modal/send.svg');
 		margin-left: 10px;
 	}
 }
