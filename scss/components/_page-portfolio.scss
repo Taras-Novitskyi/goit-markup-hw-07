@@ -9,8 +9,7 @@
 		margin-bottom: 50px;
 	}
 	&__list {
-			display: flex;
-			justify-content: center;
+		@include flexCenter();
 	}
 	&__item {
 		margin-right: 8px;

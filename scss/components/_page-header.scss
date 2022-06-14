@@ -9,9 +9,7 @@
 	border: 1px solid #ECECEC;	
 
 		.container {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
+			@include flexCenter($main-axis:space-between);
 			height: 80px;
 		}
 		&__logo {
