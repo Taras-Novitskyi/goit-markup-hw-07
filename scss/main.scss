@@ -1,5 +1,5 @@
 @import "./utils/variables";
-@import "./components/mixins";
+@import "./utils/mixins";
 @import "./utils/modern-normalize";
 @import "./utils/nullstyle";
 @import "./utils/visually-hidden";
@@ -8,6 +8,7 @@
 @import "./components/buttons";
 @import "./components/social-icons";
 @import "./components/input-forms";
+@import "./components/footer-form";
 
 @import "./components/page-header";
 @import "./components/page-hero";
