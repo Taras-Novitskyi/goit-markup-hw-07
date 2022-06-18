@@ -8,7 +8,7 @@
 	&__list {
 		display: flex;
 	}
-	&__iteam {
+	&__item {
 		width: calc((100% - 90px) / 4);
 		text-align: center;
 		background-color: $color-main-light;

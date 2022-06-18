@@ -515,7 +515,7 @@ body {
   display: flex;
 }
 
-.social__iteam:not(:last-child) {
+.social__item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -984,7 +984,7 @@ body {
   font-size: 14px;
 }
 
-.principles__iteam:not(:last-child) {
+.principles__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -1048,7 +1048,7 @@ body {
   display: flex;
 }
 
-.team__iteam {
+.team__item {
   width: calc((100% - 90px) / 4);
   text-align: center;
   background-color: #FFFFFF;
@@ -1057,7 +1057,7 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team__iteam:not(:last-child) {
+.team__item:not(:last-child) {
   margin-right: 30px;
 }
 
